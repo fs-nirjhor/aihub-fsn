@@ -1,0 +1,28 @@
+.stylus-text {
+    font-family: 'Nova Round', cursive;
+}
+.btn-stylus {
+    background: linear-gradient(90deg,tomato,violet,darkviolet);
+}
+.border-curve {
+border-radius: 0% 0% 40% 60% / 0% 0% 35% 20% ;
+}
+.client {
+    height: 50px;
+    padding: 0px 20px;
+}
+.red-blob , .green-blob {
+  height:200px;
+  width:150px;
+}
+.red-blob {
+top: 50px;
+left: -100px;
+}
+.green-blob {
+bottom: 150px;
+right: -100px;
+}
+.star-icon {
+    height: 50px;
+}
