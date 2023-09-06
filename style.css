@@ -33,3 +33,10 @@ right: -100px;
     transform: rotate(-30deg);
     margin: 0 10px;
 }
+.text-orange {
+    color: tomato;
+}
+#closeModal {
+    top: -15px;
+    right: -15px;
+}

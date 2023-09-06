@@ -5,7 +5,6 @@
   );
   const result = await response.json();
   const data = result.data.tools;
-  console.log(data)
   if (data) {
     const idsToRemove = ['06', '11', '02', '08', '09', '12'];
     const filterData = data.filter(item => !idsToRemove.includes(item.id));
@@ -43,8 +42,19 @@ const handleDetails = async (id) => {
     const data = result.data;
     console.log(data)
     if (data) {
-      const {description, features, integrations, image_link, tool_name} = data;
-      document.getElementById("description").textContent = data.description;
+      const {description, pricing, features, integrations, image_link, tool_name} = data;
+      document.getElementById("description").textContent = description;
+      
+      pricing[0].color = "text-success";
+      pricing[1].color = "text-orange";
+      pricing[2].color = "text-danger";
+      console.log(pricing)
+      document.getElementById("pricing").innerHTML = pricing.map(price => `<div class="col">
+        <div class="card h-100 text-center small p-2 ${price.color}">
+            <p class="card-text">${price.price}</p>
+            <p class="card-text">${price.plan}</p>
+        </div>
+      </div>`).join("");
 
       const featureKeys = Object.keys(features);
        document.getElementById("features").innerHTML = featureKeys.map((key) => `<li>${features[key].feature_name}</li>`).join('');  
