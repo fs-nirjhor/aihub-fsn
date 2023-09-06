@@ -190,7 +190,7 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content position-relative">
-          <i class="bi bi-x text-white bg-danger rounded-circle h1 d-block position-absolute z-3" id="closeModal" ></i>
+          <i class="bi bi-x text-white bg-danger rounded-circle h1 d-block position-absolute" id="closeModal" ></i>
           <div class="modal-body row row-cols-1 row-cols-lg-2 p-5 g-5">
             <div class="col border-danger p-2">
               <h5 id="description" class="fw-semibold"></h5>
@@ -209,11 +209,9 @@
             <div class="col">
               <figure class="card h-100 p-3">
                 <img id="image" class="card-img-top rounded">
-                <div class="card-body">
-                  <figcaption class="card-title fw-semibold h5">Hi, how are you doing today?</figcaption>
-                  <p class="card-text">
-                    I'm doing well, thank you for asking. How can I assist you today?
-                  </p>
+                <div class="card-body text-center">
+                  <figcaption class="card-title fw-semibold h5" id="input"></figcaption>
+                  <p class="card-text" id="output"></p>
                 </div>
               </figure>
             </div>

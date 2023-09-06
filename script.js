@@ -42,7 +42,7 @@ const handleDetails = async (id) => {
     const data = result.data;
     console.log(data)
     if (data) {
-      const {description, pricing, features, integrations, image_link, tool_name} = data;
+      const {description, pricing, features, integrations, image_link, tool_name, input_output_examples} = data;
       document.getElementById("description").textContent = description;
       
       pricing[0].color = "text-success";
@@ -51,7 +51,7 @@ const handleDetails = async (id) => {
       console.log(pricing)
       document.getElementById("pricing").innerHTML = pricing.map(price => `<div class="col">
         <div class="card h-100 text-center small p-2 ${price.color}">
-            <p class="card-text">${price.price}</p>
+            <p class="card-title">${price.price}</p>
             <p class="card-text">${price.plan}</p>
         </div>
       </div>`).join("");
@@ -62,6 +62,9 @@ const handleDetails = async (id) => {
       document.getElementById("integrations").innerHTML = integrations.map((integration) => `<li>${integration}</li>`).join("");
       document.getElementById("image").setAttribute("src", image_link[0]);
       document.getElementById("image").setAttribute("alt", tool_name);
+
+      document.getElementById("input").textContent = input_output_examples[0].input;
+      document.getElementById("output").textContent = input_output_examples[0].output;
       
       const floatingBox = new bootstrap.Modal(document.getElementById("floating-box"));
       floatingBox.show();
