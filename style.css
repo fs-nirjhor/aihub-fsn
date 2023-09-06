@@ -1,8 +1,12 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
 .stylus-text {
     font-family: 'Nova Round', cursive;
 }
 .btn-stylus {
     background: linear-gradient(90deg,tomato,violet,darkviolet);
+    color: white;
 }
 .border-curve {
 border-radius: 0% 0% 40% 60% / 0% 0% 35% 20% ;
@@ -14,15 +18,18 @@ border-radius: 0% 0% 40% 60% / 0% 0% 35% 20% ;
 .red-blob , .green-blob {
   height:200px;
   width:150px;
+  display: block;
 }
 .red-blob {
-top: 50px;
+top: 0;
 left: -100px;
 }
 .green-blob {
-bottom: 150px;
+bottom: 200px;
 right: -100px;
 }
 .star-icon {
-    height: 50px;
+    height: 30px;
+    transform: rotate(-30deg);
+    margin: 0 10px;
 }

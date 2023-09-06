@@ -4,34 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AiHub</title>
-    <!-- Bootstrap CDN  -->
-    <link
+    <!-- Bootstrap CSS CDN  -->
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
-    />
-    <!-- Google fonts CDN  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css">
+    /> -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Google Fonts CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Round&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="bg-success bg-opacity-10 border-curve">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container-fluid">
-          <a class="navbar-brand fw-bold d-block me-5" href="#"><img src="./assets/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top"> AiHub</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand fw-bold d-block me-5" href="#"
+            ><img
+              src="./assets/logo.png"
+              alt="logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            AiHub</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarNavAltMarkup"
+          >
             <div class="navbar-nav align-self-center">
-              <a class="nav-link active" aria-current="page" href="#">Feature</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Feature</a
+              >
               <a class="nav-link" href="#">About us</a>
               <a class="nav-link" href="#">Products</a>
               <a class="nav-link" href="#">Pricing</a>
@@ -39,55 +61,367 @@
             </div>
             <div class="navbar-nav gap-2">
               <button class="btn bg-transparent">Log in</button>
-              <button class="btn btn-stylus text-white fw-bold">Sign up</button>
+              <button class="btn btn-stylus fw-bold">Sign up</button>
             </div>
           </div>
         </div>
       </nav>
       <!-- Hero area  -->
-      <section class="position-relative my-3">
-      <div class="container position-relative z-2">
-        <div class="row row-cols-1 row-cols-lg-2 justify-content-center align-items-center">
-          <div class="col">
-            <h1 class="h1 stylus-text fw-bold">Improve the <br> way <u class="text-danger">you charge</u>, <br> with one click</h1>
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptatibus.</p>
-            <div>
-              <button class="btn btn-dark"><img src="./assets/apple.png" alt="appstore" width="30" height="24" class="d-inline-block align-text-top"> App Store</button>
-              <button class="btn btn-light ms-3 border-black"><img src="./assets/playstore.png" alt="playstore" width="30" height="24" class="d-inline-block align-text-top"> Play Store</button>
+      <section class="position-relative overflow-hidden">
+        <div class="container position-relative z-2 my-3">
+          <div
+            class="row row-cols-1 row-cols-lg-2 justify-content-center align-items-center"
+          >
+            <div class="col">
+              <h1 class="h1 stylus-text fw-bold">
+                Improve the <br />
+                way <u class="text-danger">you charge</u>, <br />
+                with one click
+              </h1>
+              <p class="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, voluptatibus.
+              </p>
+              <div>
+                <button class="btn btn-dark">
+                  <img
+                    src="./assets/apple.png"
+                    alt="appstore"
+                    width="30"
+                    height="24"
+                    class="d-inline-block align-text-top"
+                  />
+                  App Store
+                </button>
+                <button class="btn btn-light ms-3 border-black">
+                  <img
+                    src="./assets/playstore.png"
+                    alt="playstore"
+                    width="30"
+                    height="24"
+                    class="d-inline-block align-text-top"
+                  />
+                  Play Store
+                </button>
+              </div>
+              <p class="mt-3">
+                Different platform?
+                <a href="#" class="text-black fw-bold">Contact us</a>
+              </p>
             </div>
-            <p class="mt-3">Different platform? <a href="#" class="text-black fw-bold">Contact us</a></p>
-          </div>
-          <div class="col d-flex justify-content-center py-5 position-relative">
-            <img src="./assets/bannar.png" alt="banner" class="img-fluid">
-            <img src="./assets/star-and-crescent.svg" class="position-absolute end-0 z-1 img-fluid star-icon"/>
-            <img src="./assets/star-and-crescent.svg" class="position-absolute bottom-50 start-0 z-1 img-fluid star-icon"/>
+            <div
+              class="col d-flex justify-content-center py-5 position-relative"
+            >
+              <img src="./assets/bannar.png" alt="banner" class="img-fluid" />
+              <img
+                src="./assets/star-and-crescent.svg"
+                class="position-absolute end-0 z-1 img-fluid star-icon"
+              />
+              <img
+                src="./assets/star-and-crescent.svg"
+                class="position-absolute bottom-50 start-0 z-1 img-fluid star-icon"
+              />
+            </div>
           </div>
         </div>
-       
-      </div>
-        <img src="./assets/blobred.png" alt="blob" class="position-absolute z-1 red-blob img-fluid">
-        <img src="./assets/blobgreen.png" alt="blob" class="position-absolute z-1 green-blob img-fluid">
-    </section>
+        <img
+          src="./assets/blobred.png"
+          alt="blob"
+          class="position-absolute z-1 red-blob"
+        />
+        <img
+          src="./assets/blobgreen.png"
+          alt="blob"
+          class="position-absolute z-1 green-blob"
+        />
+      </section>
     </header>
+
     <!-- clients -->
     <section class="mt-5 container">
-      <h4 class="h4 text-center mb-3">Over <b>32k+</b> software business growing with AiHub </h4>
-      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 justify-content-center row-gap-3">
-        <img src="./assets/microsoft.png" alt="microsoft" class="img-fluid col px-5">
-        <img src="./assets/trello.png" alt="trello" class="img-fluid col px-5">
-        <img src="./assets/google.png" alt="google" class="img-fluid col px-5">
-        <img src="./assets/dropbox.png" alt="dropbox" class="img-fluid col px-5">
-        <img src="./assets/Slack.png" alt="Slack" class="img-fluid col px-5">
+      <h4 class="h4 text-center mb-3">
+        Over <b>32k+</b> software business growing with AiHub
+      </h4>
+      <div
+        class="row row-cols-2 row-cols-md-3 row-cols-lg-5 justify-content-center row-gap-3"
+      >
+        <img
+          src="./assets/microsoft.png"
+          alt="microsoft"
+          class="img-fluid col px-5"
+        />
+        <img
+          src="./assets/trello.png"
+          alt="trello"
+          class="img-fluid col px-5"
+        />
+        <img
+          src="./assets/google.png"
+          alt="google"
+          class="img-fluid col px-5"
+        />
+        <img
+          src="./assets/dropbox.png"
+          alt="dropbox"
+          class="img-fluid col px-5"
+        />
+        <img src="./assets/Slack.png" alt="Slack" class="img-fluid col px-5" />
+      </div>
+    </section>
+
+    <!-- tools -->
+    <section class="mt-5 py-5 container bg-primary bg-opacity-10 rounded-4">
+      <h2 class="h2 text-center stylus-text mb-5 position-relative">
+        The <u class="text-danger">Product</u> we work with
+        <img
+          src="./assets/star-and-crescent.svg"
+          class="position-absolute end-0 top-0 z-1 img-fluid star-icon"
+        />
+      </h2>
+      <div >
+        <div id="tools" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+      </div>
+      <div
+      class="modal fade"
+      id="floating-box"
+      aria-labelledby="alert"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content position-relative">
+          <i class="bi bi-x-circle-fill text-danger h1 d-block position-absolute end-0 top-0" id="closeModal" onclick="closeModal()"></i>
+          <div class="modal-body row row-cols-1 row-cols-lg-2 p-5 g-5">
+            <div class="col border-danger p-2">
+              <h5 id="description" class="fw-semibold"></h5>
+              <div id="package"></div>
+              <div class="d-flex justify-content-between my-3 gap-3">
+                <div>
+                   <h5 class="h5 fw-semibold">Features</h5>
+                  <div id="features"></div>
+                </div>
+                <div>
+                  <h5 class="h5 fw-semibold">Integrations</h5>
+                  <ul id="integrations"></ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <figure class="card h-100 p-3">
+                <img id="image" class="card-img-top rounded">
+                <div class="card-body">
+                  <figcaption class="card-title fw-semibold h5">Hi, how are you doing today?</figcaption>
+                  <p class="card-text">
+                    I'm doing well, thank you for asking. How can I assist you today?
+                  </p>
+                </div>
+              </figure>
+            </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <!-- in numbers  -->
+    <section class="mt-5 py-5 container">
+      <div class="row row-cols-1 row-cols-md-2 align-items-center">
+        <div class="col">
+          <h2 class="h2 stylus-text mb-3">
+            Okay. Let's see <br/>
+            <u class="text-danger h5">AiHub in numbers</u>
+          </h2>
+          <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi illo sint, saepe a rerum.</p>
+          <div class="row mt-3 row-cols-2">
+            <div class="col">
+              <h1 class="stylus-text fw-bolder h1">50.4k</h1>
+              <p class="small fw-semibold">Downloads</p>
+            </div>
+            <div class="col">
+              <h1 class="stylus-text fw-bolder h1">20k</h1>
+              <p class="small fw-semibold">Active users</p>
+            </div>
+            <div class="col">
+              <h1 class="stylus-text fw-bolder h1">300+</h1>
+              <p class="small fw-semibold">Using group</p>
+            </div>
+            <div class="col">
+              <h1 class="stylus-text fw-bolder h1">10k+</h1>
+              <p class="small fw-semibold">Subscribers</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./assets/aihub.png" alt="img" class="img-fluid">
+        </div>
+      </div>    
+    </section>
+
+    <!-- helping -->
+    <section class="mt-5 py-5 container">
+      <h2 class="h2 text-center stylus-text mb-5 position-relative">
+        We are helping <u class="text-danger">customer <br/> globally</u> everytime
+        <img
+          src="./assets/star-and-crescent.svg"
+          class="position-absolute start-0 top-0 z-1 img-fluid star-icon"
+        />
+      </h2>
+      <div class="row justify-content-center align-items-center p-3 bg-danger bg-opacity-10 rounded-4">
+        <div class="col col-12 col-md-5">
+          <i class="bi bi-phone text-danger bg-white rounded-circle p-2 my-3 d-inline-block"></i>
+          <h4 class="h4 fw-semibold mb-3">Mobile App Interface</h4>
+         <p class="small mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, quibusdam? Deserunt dolor neque suscipit consequuntur!</p>
+         <button class="btn btn-dark fw-semibold">KNOW MORE</button>
+        </div>
+        <div class="col col-12 col-md-7">
+          <img src="./assets/4-1-8.png" alt="img" class="img-fluid">
+        </div>
+      </div>
+    </section>
+
+    <!-- review -->
+    <section class="mt-5 py-5 container position-relative">
+      <h2 class="h2 stylus-text mb-5 text-center">
+        <u class="text-danger">Some words</u> from our clients
+      </h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card p-5 rounded-4 border border-danger shadow">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <img src="./assets/playstore.png" alt="client" class="img-fluid">
+            <p>
+              <i class="bi bi-star"></i> 5.0
+            </p>
+          </div>
+          <h5 class="h5 stylus-text">Edwin Zohir</h5>
+          <p class="small fw-semibold">Businessman</p>
+          <p class="small mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi dicta corporis cupiditate eligendi molestias consequatur corrupti qui iure quam.</p>
+        </div>
+      </div>
+        <div class="col">
+          <div class="card p-5 rounded-4 border border-danger shadow">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <img src="./assets/playstore.png" alt="client" class="img-fluid">
+            <p>
+              <i class="bi bi-star"></i> 5.0
+            </p>
+          </div>
+          <h5 class="h5 stylus-text">Jecson Mokbul</h5>
+          <p class="small fw-semibold">Businessman</p>
+          <p class="small mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi dicta corporis cupiditate eligendi molestias consequatur corrupti qui iure quam.</p>
+        </div>
+      </div>
+    </div>
+    <i class="bi bi-arrow-left btn bg-white border-danger d-block h1 rounded-circle position-absolute start-0 top-50 z-1"></i>
+      <i class="bi bi-arrow-right btn btn-stylus border-danger d-block h1 rounded-circle position-absolute end-0 top-50 z-1"></i>
+    </section>
+
+    <!-- mobile app -->
+    <section class="mt-5 container">
+      <div class="row row-cols-1 row-cols-md-2 align-items-center g-3">
+       <img src="./assets/mobile-app.webp" alt="app" class="img-fluid col">
+       <div class="col">
+        <p>Over <b>50,000+ users</b></p>
+        <h3 class="h3 mb-5">Download <br/> AiHub Mobile App</h3>
+        <div>
+          <button class="btn btn-dark">
+            <img
+              src="./assets/apple.png"
+              alt="appstore"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            App Store
+          </button>
+          <button class="btn btn-light ms-3 border-black">
+            <img
+              src="./assets/playstore.png"
+              alt="playstore"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Play Store
+          </button>
+        </div>
+        <p class="mt-3">
+          Different platform?
+          <a href="#" class="text-black fw-bold">Contact us</a>
+        </p>
+       </div>
       </div>
     </section>
     
+    <!-- sitemap -->
+    <section class="mt-5 py-5 bg-dark">
+      <div class="container d-flex flex-wrap justify-content-between text-light gap-5">
+        <div>
+          <h6 class="fw-semibold h6" href="#"
+            ><img
+              src="./assets/logo.png"
+              alt="logo"
+              width="24"
+              height="20"
+              class="d-inline-block align-text-top"
+            /> AiHub</h6>
+            <p class="d-flex justify-content-between">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-facebook"></i>
+            </p>
+        </div>
+        <div class="">
+          <h6 class="h6 mb-3 fw-semibold">Our Products</h6>
+          <p>Features</p>
+          <p>Smart savings</p>
+          <p>Investing</p>
+          <p>Personal Insurance</p>
+          <p>Apps & Downloads</p>
+        </div>
+        <div class="">
+          <h6 class="h6 mb-3 fw-semibold">Top Features</h6>
+          <p>Instant access</p>
+          <p>Finance education</p>
+          <p>Smart savings</p>
+          <p>Monthly Budgeting</p>
+          <p>Apps & Integrations</p>
+        </div>
+        <div class="">
+          <h6 class="h6 mb-3 fw-semibold">Company</h6>
+          <p>About us</p>
+          <p>Contact</p>
+          <p>Career</p>
+          <p>Terms & service</p>
+          <p>Privacy policy</p>
+        </div>
+        <div class="">
+          <h6 class="h6 mb-3 fw-semibold">Resource</h6>
+          <p>Blog</p>
+          <p>Help & Support</p>
+          <p>Customer stories</p>
+          <p>Legal</p>
+          <p>FAQ</p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="py-3 bg-black">
+      <div class="container d-flex justify-content-between text-light mt-3 flex-wrap gap-x-5">
+        <p> <i class="bi bi-c-circle"></i> Copyright @diti.io 2022. All Right Reserved</p>
+        <p>Terms & condition <span class="mx-3">|</span> Privacy & policy</p>
+      </div>
+    </footer>
 
-    <div class="my-5 py-5"></div>
-    <script
+    <!-- Bootstrap JS CDN -->
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+    <script src="./bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
