@@ -5,8 +5,9 @@
   );
   const result = await response.json();
   const data = result.data.tools;
+  console.log(data)
   if (data) {
-    const idsToRemove = ['06', '11', '02', '05', '08', '09'];
+    const idsToRemove = ['06', '11', '02', '08', '09', '12'];
     const filterData = data.filter(item => !idsToRemove.includes(item.id));
     const toolsSection = document.getElementById("tools");
     toolsSection.innerHTML = filterData
@@ -44,26 +45,20 @@ const handleDetails = async (id) => {
     if (data) {
       const {description, features, integrations, image_link, tool_name} = data;
       document.getElementById("description").textContent = data.description;
-      // const one = '1';
-      // const two = '2';
-      // const three = '3';
-      // document.getElementById("features").innerHTML = `<ul>
-      // <li>${features.one.feature_name}</li>
-      // <li>${features.two.feature_name}</li>
-      // <li>${features.three.feature_name}</li>
-      // </ul>`;
+
+      const featureKeys = Object.keys(features);
+       document.getElementById("features").innerHTML = featureKeys.map((key) => `<li>${features[key].feature_name}</li>`).join('');  
+
       document.getElementById("integrations").innerHTML = integrations.map((integration) => `<li>${integration}</li>`).join("");
-      document.getElementById("image").setAttribute("src", image_link);
+      document.getElementById("image").setAttribute("src", image_link[0]);
       document.getElementById("image").setAttribute("alt", tool_name);
       
       const floatingBox = new bootstrap.Modal(document.getElementById("floating-box"));
       floatingBox.show();
+      document.getElementById("closeModal").addEventListener("click", () => {floatingBox.hide()});
       }
   } catch (error) {
     alert(error.message);
   }
 }
-const closeModal = () => {
-  const floatingBox = new bootstrap.Modal(document.getElementById("floating-box"));
-      floatingBox.hide();
-}
+
